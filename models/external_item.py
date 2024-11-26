@@ -1,9 +1,4 @@
-from odoo import models, fields, api
-from odoo.exceptions import ValidationError
-from datetime import date, datetime, timedelta
-
-import logging
-_logger = logging.getLogger(__name__)
+from odoo import models, fields
 
 class ExternalItem(models.Model):
     _name = 'external.item'
