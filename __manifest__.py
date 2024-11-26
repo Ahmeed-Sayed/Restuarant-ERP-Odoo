@@ -27,6 +27,7 @@ Long description of module's purpose
         "views/customer_feedback.xml",
         "views/external_item.xml",
         "views/res_partner.xml",
+        "views/res_config_settings.xml",
         "data/server_actions.xml",
         "data/scheduale_action.xml",
         "data/sequence.xml",

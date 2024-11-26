@@ -28,9 +28,6 @@
                             <button name="action_view_feedback" type="object" class="oe_stat_button"
                                     icon="fa-pencil-square-o" string="Feedback">
                             </button>
-<!--                             <button name="%(tech_order.customer_feedback_window_action)d" type="action"-->
-<!--                             class="oe_stat_button" string="Feedback">-->
-<!--                             </button>-->
 
 
                         </div>

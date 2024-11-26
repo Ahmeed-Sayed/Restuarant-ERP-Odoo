@@ -79,7 +79,12 @@ class Order(models.Model):
         for record in self:
             record.expected_duration = (record.expected_date.date() - record.order_date).days
 
-
+    
+    @api.constrains('table_number')
+    def check_table_number(self):
+        table_number = self.env['ir.config_parameter'].get_param('tech_order.max_table_number')
+        if self.table_number > table_number:
+            raise ValidationError("Table Number must be less than or equal to " + str(table_number))
 
     def action_confirm(self):
         self.state = 'confirmed'
